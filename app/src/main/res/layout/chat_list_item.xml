@@ -1,0 +1,58 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="2dp">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_profile"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/message_body"
+        android:layout_toEndOf="@+id/profile"
+        android:layout_toRightOf="@+id/profile"
+        >
+        <LinearLayout
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_jid"
+                android:text="@string/user_example_com"
+                tools:text="@string/server_text"
+                android:textSize="23sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"/>
+            <android.support.v4.widget.Space
+                android:layout_height="4dp"
+                android:layout_width="match_parent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/message_abstract"
+                android:text="@string/last_message"/>
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_message_timestamp"
+                android:text="12:12pm"
+                android:textSize="23sp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+</RelativeLayout>

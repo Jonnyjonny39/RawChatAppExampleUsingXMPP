@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RoosterPlus</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Jabber Id</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_jid">This Jabber Id is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing jid
+        completions."
+    </string>
+    <string name="prompt_jid">prompt_jid</string>
+    <string name="user_example_com">user@example.com</string>
+    <string name="server_text">user@server.com</string>
+    <string name="last_message">This is the last message we exchanged</string>
+    <string name="sendMessage">Send Message</string>
+    <string name="receive_message">Receive Message</string>
+    <string name="title_activity_contact_list">ContactListActivity</string>
+    <string name="add_contact_label_text">Jabber Id</string>
+    <string name="add_contact_confirm_text">OK</string>
+    <string name="add_contact_cancel_text">CANCEL</string>
+</resources>

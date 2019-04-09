@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_profile"/>
+
+    <FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/message_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:cardBackgroundColor="@android:color/holo_blue_bright"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/text_message_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical|start"
+                    android:text="Jonnys In The Basement"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp" />
+
+                <TextView
+                    android:id="@+id/text_message_timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:10am"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </FrameLayout>
+</RelativeLayout>
